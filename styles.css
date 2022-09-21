@@ -157,36 +157,6 @@ nav {
   text-align: center;
 }
 
-.about-me__picture--mask {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
-  margin-bottom: 28px;
-  animation: animate-profile-picture 800ms 200ms backwards;
-}
-
-@keyframes animate-profile-picture {
-  0% {
-    transform: scale(0);
-  }
-  80% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.about-me__picture {
-  width: 100%;
-
-  /* Improving my own picture */
-  transform: scale(1.5);
-  padding-top: 8px;
-}
-
 .about-me__info--title {
   margin-bottom: 16px;
   animation: fade-up 650ms 400ms backwards;
@@ -366,6 +336,7 @@ nav {
 
 .project__description--title {
   font-size: 40px;
+  
 }
 
 .project__description--para {
@@ -375,12 +346,14 @@ nav {
 .project__description--link {
   font-size: 20px;
   margin-right: 16px;
+  
 }
 
 .project__description--title,
 .project__description--sub-title,
 .project__description--para,
-.project__description--link {
+.project__description--link,
+.project__description--date {
   text-align: left;
   color: #fff;
 }
